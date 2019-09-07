@@ -20,11 +20,11 @@
     }
     .Nav-brand-logo {
       display: block;
-      background-position: -176px 0px;
-      background-image: url(../../../instachain-icon.png);
-      background-size: 405px 379px;
+      background-position: 0px -7px;
+      background-image: url("instachain-icon.png");
+      background-size: 175px 160px;
       background-repeat: no-repeat;
-      height: 35px;
-      width: 176px;
+      height: 380px;
+      width: 185px;
       text-indent: -1000%
     }
