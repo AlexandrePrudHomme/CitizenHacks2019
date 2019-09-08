@@ -3,6 +3,7 @@ import {
   Person,
   lookupProfile
 } from 'blockstack';
+import Navbar from './Navbar'
 
 const avatarFallbackImage = 'https://s3.amazonaws.com/onename/avatar-placeholder.png';
 
@@ -60,42 +61,45 @@ export default class Profile extends Component {
 
     return (
       !userSession.isSignInPending() && person ?
+     <div>
+      <Navbar/>
       <div className="container">
-        <div>
-          <div>
-          <div>
-                <textarea className="input-status"
+
+            <div className="new-status">
+              <div className="col-md-12">
+
+              {/* <div  style={{zIndex: "1000"}}>
+                <textarea className="input-status-find"
                 value={this.state.findProfile}
                 onChange={e => this.handleFindProfile(e)}
                 placeholder="Find a profile"
-              />
-            <button
-                    className="btn btn-primary btn-lg"
+                 />
+                <button
+                    className="btn-find btn-primary-find btn-lg-find"
                     onClick={e => this.handleFindProfileSubmit(e)}
                   >
                     Submit
-                  </button>
-          </div>
-          
-            <div className="col-md-12">
-              <div className="avatar-section">
-                <img
-                  src={ person.avatarUrl() ? person.avatarUrl() : avatarFallbackImage }
-                  className="img-rounded avatar"
-                  id="avatar-image"
-                />
-                <div className="username">
-                  <h1>
-                    <span id="heading-name">{ person.name() ? person.name()
-                      : 'Nameless Person' }</span>
-                  </h1>
-                  <span>{username}</span>
-                  {this.isLocal() &&
-                    <span>
-                      &nbsp;|&nbsp;
-                      <a onClick={ handleSignOut.bind(this) }>(Logout)</a>
-                    </span>
-                  }
+                </button>
+              </div> */}
+                <div className="avatar-con">
+                  <img
+                    src={ person.avatarUrl() ? person.avatarUrl() : avatarFallbackImage }
+                    className="img-rounded avatar"
+                    id="avatar-image"
+                  />
+                  <div className="username">
+                    <h1>
+                      <span id="heading-name">{ person.name() ? person.name()
+                        : 'Nameless Person' }</span>
+                    </h1>
+                    <span>{username}</span>
+                    {this.isLocal() &&
+                      <span>
+                        &nbsp;|&nbsp;
+                        <a onClick={ handleSignOut.bind(this) }>(Logout)</a>
+                      </span>
+                    }
+                  </div>
                 </div>
               </div>
             </div>
@@ -128,9 +132,19 @@ export default class Profile extends Component {
                 )
             )}
             </div>
-          </div>
-        </div>
-      </div> : null
+
+            <div>
+              <a className="Nav-brand-logo"></a>
+            </div>
+            <span>
+                        &nbsp;|&nbsp;
+                        <a onClick={ handleSignOut.bind(this) }>(Logout)</a>
+                      </span>
+
+
+      </div>
+      </div>
+       : null
     );
     }
 

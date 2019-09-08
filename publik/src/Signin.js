@@ -7,7 +7,7 @@ export default class Signin extends Component {
 
     return (
       <div className="panel-landing" id="section-1">
-        <h1 className="landing-heading">Hello, Blockstack!</h1>
+        <h1 className="landing-heading">Instachain Powered by Blockstack!</h1>
         <p className="lead">
           <button
             className="btn btn-primary btn-lg"
@@ -17,6 +17,9 @@ export default class Signin extends Component {
             Sign In with Blockstack
           </button>
         </p>
+        <div>
+              <a className="Nav-brand-logo"></a>
+            </div>
       </div>
     );
   }
