@@ -7,10 +7,10 @@
 Companies have control over users’ personal data. They can exploit this and sell it for monetary gain.
 
 ### Solution: 
-We are trying to prevent this by decentralizing users’ personal data using blockchain
+We are trying to prevent this by decentralizing users’ personal data using blockchain.
 
 ### Purpose: 
-Social media website where users can write text posts and look up other users’ profiles to see their posts
+Social media website where users can write text posts and look up other users’ profiles to see their posts.
 
 ### Description: 
 Instachain uses blockstack, which is a decentralized computing platform. Blockstack encrypts data. This removes the potential for breaches of privacy from outside parties and the company itself.
@@ -26,14 +26,16 @@ https://www.ipc.on.ca/wp-content/uploads/Resources/pbd-privacy-and-security-by-d
 7. Respect for User Privacy — Keep it User-Centric: Users of InstaChain and their privacy are our top priority
 
 ### Challenges: 
-- Had trouble displaying logo 
-- Trial and error
-- Played around with the numbers (ex. background-size, width, height)
+- Had trouble displaying logo
+  - Trial and error
+  - Played around with the numbers (ex. background-size, width, height)
 - Issues viewing other people’s profiles on InstaChain
 - Input field would not pass properly, it always returned a null
-- Looking for solutions online
+  - Looking for solutions online
 - Components of web page would be out of place
-- Look for solutions in existing code and tried different approaches until the webpage looked the way we wanted (mainly css framework struggles as we have very little experience)
+  - Look for solutions in existing code and tried different approaches until the webpage looked the way we wanted
+- Didn't know a good way to implement image posting
+  - This would be a next step (mainly css framework struggles as we have very little experience)
 
 ### Sources:
 1. Tutorial: BUILD A REALTIME INSTAGRAM CLONE by Christian Nwamba from https://pusher.com/tutorials/instagram-clone-part-1
